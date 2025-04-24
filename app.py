@@ -101,10 +101,6 @@ def signout():
     blacklist.add(jti)
     return jsonify({"message": "Successfully signed out"}), 200
 
-# @app.route('/protected', methods=['GET'])
-# @jwt_required()
-# def protected():
-#     return jsonify({"message": "You are logged in and token is valid!"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True)
